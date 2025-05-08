@@ -1,0 +1,226 @@
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama</title>
+    <style>
+        @font-face {
+            font-family: 'TTFont';
+            src: url('TT-JTCEEECEiM9P.ttf') format('truetype');
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #353A5F, #9EBAF3);
+            color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h1, h2 {
+            font-family: 'TTFont', sans-serif;
+            color: white;
+            text-align: center;
+        }
+
+        marquee {
+            font-size: 18px;
+            color: white;
+            margin: 20px 0;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background-color: white;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .navbar {
+            background-color: #353A5F;
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            float: right;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .navbar a:hover {
+            background-color: white;
+        }
+
+        .menu-icon {
+            display: none;
+            flex-direction: column;
+            width: 30px;
+            height: 25px;
+            justify-content: space-between;
+            cursor: pointer;
+            margin: 15px;
+        }
+
+        .bar {
+            width: 100%;
+            height: 5px;
+            background-color: white;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        @media screen and (max-width: 768px) {
+            .navbar a {
+                float: none;
+                display: block;
+                text-align: left;
+                padding: 10px;
+            }
+
+            .menu-icon {
+                display: flex;
+            }
+
+            .navbar.responsive {
+                position: relative;
+            }
+
+            .navbar.responsive a {
+                display: block;
+                width: 100%;
+            }
+
+            .navbar.responsive .menu-icon {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+
+            .navbar.responsive .bar:nth-child(1) {
+                transform: rotate(45deg);
+                position: absolute;
+                top: 5px;
+            }
+
+            .navbar.responsive .bar:nth-child(2) {
+                opacity: 0;
+            }
+
+            .navbar.responsive .bar:nth-child(3) {
+                transform: rotate(-45deg);
+                position: absolute;
+                bottom: 5px;
+            }
+        }
+
+        .main-content {
+            margin-top: 80px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .main-content img {
+            max-width: 100%;
+            height: auto;
+            max-height: 160px;
+        }
+
+        ul {
+            list-style-type: none; 
+            padding-left: 0;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+
+        li {
+            position: relative;
+            margin: 10px 0;
+            font-size: 18px;
+            text-align: left;
+            padding-left: 30px;
+        }
+
+        li::marker {
+            content: "●"; 
+            color:white; 
+            font-size: 28px;  
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 18px;
+            color: white;
+            margin: 15px 0;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        a {
+            color:white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar" id="navbar">
+        <a href="about.html">About Us</a>
+        <a href="karya.html">Karya</a>
+        <a href="kontak.html">Contact</a>
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <img src="https://i0.wp.com/www.sman1pekalongan.sch.id/v2/wp-content/uploads/2020/02/cropped-LOGO-SMA-1-PKL-HD.png?fit=2048%2C2048&ssl=1" alt="Header Logo">
+        <h1>Situs Website Rekayasa Teknologi</h1>
+        <h2>Teknologi Informatika</h2>
+        <hr>
+        <marquee behavior="scroll" direction="up" height="40" scrollamount="1">
+            <center>Selamat datang pada halaman website kami.</center>
+        </marquee>
+
+        <p>Di Website ini kalian bisa mencari Rekayasa teknologi dan terupdate pada Zaman yang kemajuan teknologinya sudah lebih maju dari zaman sebelumnya!</p>
+        <p>Pada P5 SMA NEGERI 1 KOTA PEKALONGAN kali ini memuat tema Rekayasa teknologi yang bertujuan untuk meningkatkan kemampuan kritis siswa serta kreativitas dan inovasi dalam bidang rekayasa teknologi.</p>
+        <p>Sebelum mulai, apa itu rekayasa teknologi? Rekayasa teknologi adalah penerapan ilmu pengetahuan dan teknologi untuk merancang, membuat, mengembangkan, dan memelihara sistem atau produk yang bermanfaat.</p>
+        <p>Kami mengambil beberapa hasil karya dari siswa maupun siswi SMANSA yang berasal dari kelas Kartini 3, Kartini 4, dan Kartini 6 yang berjumlah sebanyak 4, yang masing-masing mampu memecahkan masalah dalam kehidupan sehari-hari.</p>
+        <p>Dengan diadakannya Projek Penguatan Ini, SMA Negeri 1 Kota Pekalongan mengaplikasikan tujuan berikut:</p>
+        <ul>
+            <li>Menumbuhkan Kemampuan Berpikir Kritis dan Kreatif</li>
+            <li>Mempersiapkan Generasi Tangguh di Era Digital</li>
+            <li>Mengintegrasikan Nilai-nilai Pancasila dalam Teknologi</li>
+            <li>Membangun Jiwa Inovatif dan Kolaboratif</li>
+            <li>Meningkatkan Literasi Teknologi</li>
+        </ul>
+        <p>Dengan adanya P5 ini kami berharap agar hasil dari projek kali ini bisa bermanfaat ke depannya.</p>
+    </div>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.getElementById('navbar');
+
+        menuIcon.addEventListener('click', function() {
+            navbar.classList.toggle('responsive');
+        });
+    </script>
+
+</body>
+</html>
